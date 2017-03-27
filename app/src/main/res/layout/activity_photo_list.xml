@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#ffff"
+    tools:context="com.kuk.test1.PhotoListActivity"
+    android:orientation="horizontal">
+
+
+    <FrameLayout
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        >
+
+        <ImageView
+            android:id="@+id/photoImgView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtpath"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Path"
+               android:textColor="#ff00"/>
+               <TextView
+                   android:id="@+id/txtdate"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="date"
+                   android:textColor="#ff00"/>
+            </LinearLayout>
+           <Button
+               android:id="@+id/btndeletephoto"
+               android:text="Delete"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="bottom|end"/>
+        </FrameLayout>>
+
+
+</LinearLayout>
